@@ -21,6 +21,8 @@ Sentry.init({
 const Tab = createBottomTabNavigator();
 
 const App = () => {
+  throw new Error('My first Sentry error!');
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <NavigationContainer>
